@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tracks by genre</title>
+</head>
+<body>
+    <h1>Tracks by genre</h1>
+    <h2>Count of {{ genre }} tracks: {{ count }}</h2>
+    {% for track in tracks %}
+    <div class='track'>
+        <h3>{{ track['title'] }} - {{ track['artist'] }}</h3><hr>
+    </div>
+    {% endfor %}
+</body>
+</html>

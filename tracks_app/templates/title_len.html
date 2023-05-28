@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tracks` duration</title>
+</head>
+<body>
+    <h1>Tracks` duration</h1>
+   {% for track in tracks %}
+        <div class='track'>
+            <p>{{ track['title'] }} - {{ track['length'] }} seconds</p><hr>
+        </div>
+  {% endfor %}
+</body>
+</html>
